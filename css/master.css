@@ -1,10 +1,11 @@
 :root {
-  --ink: #17212b;
-  --muted: #62717f;
-  --paper: #f7f8f5;
-  --tint: #e9f0ee;
-  --accent: #d86b45;
-  --line: #d7e0dd;
+  --ink: #ffffff;
+  --muted: #d3def3;
+  --paper: #0b1f4d;
+  --tint: #12356b;
+  --accent: #f47b3f;
+  --highlight: #ffd447;
+  --line: rgba(255, 255, 255, .22);
   --white: #fff;
   --display: "Space Grotesk", sans-serif;
   --body: "DM Sans", sans-serif;
@@ -81,7 +82,7 @@ button:focus-visible {
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: #ffb59b;
+  color: var(--highlight);
   opacity: 1;
 }
 
@@ -119,7 +120,7 @@ button:focus-visible {
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: #19333a;
+  background: var(--paper);
   color: var(--white);
 }
 
@@ -141,7 +142,7 @@ button:focus-visible {
 }
 
 .hero .eyebrow {
-  color: #ffb59b;
+  color: var(--highlight);
 }
 
 h1,
@@ -165,7 +166,7 @@ h2 {
 .hero-intro {
   max-width: 430px;
   margin: 2rem 0;
-  color: #c4d2d1;
+  color: var(--muted);
   font-size: 1.15rem;
 }
 
@@ -174,15 +175,15 @@ h2 {
   align-items: center;
   gap: 1.5rem;
   padding: .9rem 1.2rem;
-  background: var(--accent);
-  color: var(--white);
+  background: var(--highlight);
+  color: #0b1f4d;
   font-size: .85rem;
   font-weight: 700;
   transition: transform .2s ease, background .2s ease;
 }
 
 .button:hover {
-  background: #c55835;
+  background: #ffe27a;
   transform: translateY(-2px);
 }
 
@@ -266,8 +267,8 @@ h2 {
 
 .interest-list span {
   padding: .5rem .8rem;
-  border: 1px solid var(--line);
-  color: var(--ink);
+  border: 1px solid var(--highlight);
+  color: var(--white);
   font-size: .8rem;
   font-weight: 700;
 }
@@ -296,7 +297,7 @@ h2 {
 }
 
 .university-section {
-  background: #19333a;
+  background: var(--paper);
   color: var(--white);
 }
 
@@ -308,22 +309,22 @@ h2 {
 }
 
 .university-card .lead {
-  color: #c4d2d1;
+  color: var(--muted);
 }
 
 .button-light {
-  background: var(--white);
-  color: var(--ink);
+  background: var(--highlight);
+  color: #0b1f4d;
   white-space: nowrap;
 }
 
 .button-light:hover {
-  background: #dce8e5;
+  background: #ffe27a;
 }
 
 .site-footer {
-  background: #10272d;
-  color: #c4d2d1;
+  background: #071536;
+  color: var(--muted);
 }
 
 .site-footer small,
