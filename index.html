@@ -2,51 +2,116 @@
 <html lang="en">
 
 <head>
-    <title>Ulysses Young's Portfolio</title>
-    <link rel="stylesheet" href="css/master.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The portfolio of Ulysses Young, an accounting student and student-athlete.">
+  <title>Ulysses Young | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="js/main.js" defer></script>
 </head>
 
-
-  <header>
-<h1>Ulysses Young's Portfolio</h1>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Ulysses Young home">UY<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#goals">Goals</a>
+        <a href="#university">University</a>
+      </nav>
+    </div>
   </header>
 
-  <body>
-<h2>About Me</h2>
-<p>
-  My name is Ulysses Young. I am a student at the University of Mary Washington majoring in accounting. I am aslo a memeber of the men's basketball team.
-</p>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Student · Athlete · Future entrepreneur</p>
+          <h1>Ulysses Young's <span>Portfolio</span></h1>
+          <p class="hero-intro">Building a future that balances discipline, creativity, and community.</p>
+          <a class="button" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-mark" aria-hidden="true">
+          <span>UY</span>
+          <i></i>
+        </div>
+      </div>
+    </section>
 
-<img src="https://i.ibb.co/MxvqyHJB/IMG-1264.jpg"
-    alt="My umw basketball photo"
-    width="250"> 
+    <section id="about" class="section">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">01 / About me</p>
+          <h2>Focused on what comes next.</h2>
+        </div>
+        <div class="section-content">
+          <p class="lead">My name is Ulysses Young. I am a student at the University of Mary Washington majoring in accounting. I am also a member of the men's basketball team.</p>
+          <img class="profile-image" src="https://i.ibb.co/MxvqyHJB/IMG-1264.jpg" alt="Ulysses Young playing basketball for UMW" width="250" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-<hr>
+    <section id="interests" class="section section-tinted">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">02 / My interests</p>
+          <h2>Curious, active, and always learning.</h2>
+        </div>
+        <div class="section-content">
+          <p class="lead">I enjoy playing basketball, working out, playing video games, going to the movie theater to see new movies, watching anime, reading manga, and spending time with family and friends.</p>
+          <div class="interest-list" aria-label="Interests">
+            <span>Basketball</span><span>Fitness</span><span>Anime & manga</span><span>Film</span><span>Family & friends</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>My Interests</h2>
-<p>
-    I enjoy playing basketball, working out, playing video gmanes, going to the movie theater seeeing new movies, watching anime, reading manga, and also spending time with family and friends.
-</p>
+    <section id="goals" class="section">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">03 / Career goals</p>
+          <h2>Turning ambition into action.</h2>
+        </div>
+        <div class="section-content">
+          <p class="lead">I plan to use my accounting degree to start my career and eventually open my own business.</p>
+          <div class="goal-card">
+            <span class="goal-number">01</span>
+            <p>Learn through a meaningful accounting career.</p>
+          </div>
+          <div class="goal-card">
+            <span class="goal-number">02</span>
+            <p>Build a business of my own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<hr>
+    <section id="university" class="section section-tinted university-section">
+      <div class="container university-card">
+        <div>
+          <p class="eyebrow">04 / My university</p>
+          <h2>Go Eagles.</h2>
+          <p class="lead">Learn more about the University of Mary Washington.</p>
+        </div>
+        <a class="button button-light" href="https://www.umw.edu" target="_blank" rel="noreferrer">Visit UMW <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-<hr2>My Career Goals</h2>
-  <p>
-    I plan to use my accouting degree to start my career and eventually open my own business.
-  </p>
-
-  <hr>
-
-  <h2>My University</h2>
-  <p>
-    <a href="https://www.umw.edu">
-      Visit the University of Mary Washington
-    </a>
-  </p>
-  </body>
-
-  <footer>
-<small>Created by Ulysses Young</small>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>Created by Ulysses Young</small>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
+</body>
 
 </html>
